@@ -10,9 +10,10 @@ body {
 	font-family: "Open Sans";
 }
 
-header {
+#header {
 	height:56px;
 	position: relative;
+	overflow:hidden;
 	text-align:left;
 
 	.logo, .questions {
@@ -59,6 +60,7 @@ header {
 
 .wrap{
 	position:relative;
+	// overflow:hidden;
 	width:1024px;
 	margin:0 auto;
 }
@@ -145,6 +147,7 @@ header {
 
 .icons {
 	position:relative;
+	overflow:hidden;
 	background:url('../img/icons.png') no-repeat #004f87;
 	background-position: 50% 20px;
 	height:92px;
@@ -167,7 +170,7 @@ header {
 	}
 }
 
-footer {
+#footer {
 	
 	.info {
 		font-size:18px;
@@ -190,6 +193,7 @@ footer {
 	}
 	.footer-menu {
 		position:relative;
+		overflow:hidden;
 		background-color: #02385d;
 		text-align: left;
 		min-height: 78px;
@@ -203,7 +207,7 @@ footer {
 		.copyright {
 			position: absolute;
 			top:20px;
-			right:42px;
+			right:20px;
 			text-align: right;
 			color: #4b83aa;
 		}
@@ -215,9 +219,16 @@ footer {
 .bold {
 	font-weight:700;
 }
+.phone {
+	 /* For IE7 */
+	font-weight: 700;
+	font-size: 18px;
+	color: #0b76be;
+}
 
 @media screen and (max-width:1023px) {
 	.wrap {
 		width:720px;
 	}
+
 }
