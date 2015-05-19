@@ -16,50 +16,83 @@ header {
   header .logo {
     left: 40px; }
   header .logo p {
-    padding-left: 10px; }
+    padding-left: 10px;
+    text-transform: uppercase; }
   header .questions {
     right: 40px;
     text-align: right; }
 
+.wrap {
+  position: relative;
+  width: 1024px;
+  margin: 0 auto; }
+
 .banner-main {
-  background-color: #0769af;
-  color: white; }
+  background: url("../img/bg.jpg") #0769ad top center no-repeat;
+  color: white;
+  min-height: 680px; }
   .banner-main h1 {
+    padding-top: 30px;
     font-weight: 700;
     font-size: 34px; }
   .banner-main h2 {
+    padding-top: 10px;
     font-weight: 400;
     font-size: 25px; }
   .banner-main .verified {
     text-align: left; }
+    .banner-main .verified p {
+      position: absolute;
+      top: 628px;
+      left: 163px; }
   .banner-main form {
     width: 350px;
     height: 400px;
     margin: 0 auto;
-    background: #0767a9; }
+    margin-top: 78px; }
+  .banner-main label {
+    font-size: 24px; }
   .banner-main input, .banner-main select {
-    width: 267px;
+    margin: 15px 0;
+    width: 285px;
     height: 65px;
     border: 0px;
     border-radius: 3px; }
+  .banner-main select {
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    font-size: 20px;
+    padding-left: 10px;
+    font-weight: 300; }
   .banner-main input[name="getMoving"] {
-    background: orange;
+    background: #f3820a;
     font-size: 32px;
     color: white;
-    margin: 40px 0 32px 0; }
+    margin: 20px 0 32px 0; }
 
-footer .icons {
-  background-color: #004f87; }
-  footer .icons ul {
+.icons {
+  position: relative;
+  background: url("../img/icons.png") no-repeat #004f87;
+  background-position: 50% 20px;
+  height: 92px; }
+  .icons ul {
     list-style-type: none; }
-    footer .icons ul li {
+    .icons ul li {
       display: inline; }
-  footer .icons p {
+  .icons p {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    margin-left: -340px;
+    text-align: center;
     color: #569cce;
     padding-bottom: 10px; }
+
 footer .info {
   padding: 30px 0; }
   footer .info p {
+    color: #5692bb;
     padding-bottom: 20px; }
   footer .info p:last-child {
     padding-bottom: 0px; }
@@ -72,14 +105,18 @@ footer .footer-menu {
   background-color: #02385d;
   text-align: left;
   min-height: 73px; }
+  footer .footer-menu .wrap > p {
+    position: absolute;
+    left: 26px;
+    color: white; }
   footer .footer-menu .copyright {
     position: absolute;
     right: 42px;
     text-align: right;
     color: #4b83aa; }
-footer .footer-menu > p {
-  position: absolute;
-  left: 26px;
-  color: white; }
+
+@media screen and (max-width: 1023px) {
+  .wrap {
+    width: 720px; } }
 
 /*# sourceMappingURL=style.css.map */

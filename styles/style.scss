@@ -28,6 +28,7 @@ header {
 
 	.logo p {
 		padding-left:10px;
+		text-transform: uppercase;
 	}
 
 	.questions {
@@ -37,62 +38,101 @@ header {
 
 }
 
+.wrap{
+	position:relative;
+	width:1024px;
+	margin:0 auto;
+}
+
 .banner-main {
-	background-color: #0769af;
+	background:url('../img/bg.jpg') #0769ad top center no-repeat;
 	color:white;
+	min-height:680px;
+	
+	
 	h1 {
+		padding-top:30px;
 		font-weight: 700;
 		font-size:34px;
 	}
 	h2 {
+		padding-top:10px;
 		font-weight:400;
 		font-size:25px;
 	}
 
 	.verified {
 		text-align: left;
-		
+		p {
+			position: absolute;
+			top: 628px;
+			left: 163px;
+		}
 	}
 	form {
 		width:350px;
 		height:400px;
 		margin:0 auto;
-		background: #0767a9;
+		margin-top:78px;
+	}
+	label {
+		font-size:24px;
 	}
 
 	input, select {
-		width: 267px;
+		margin:15px 0;
+		width: 285px;
 	    height: 65px;
 	    border: 0px;
 	    border-radius: 3px;
 	}
+	select {
+	    -moz-appearance: none;
+	    text-indent: 0.01px;
+	    text-overflow: '';
+	    font-size:20px;
+	    padding-left:10px;
+	    font-weight: 300;
+	}
 	input[name="getMoving"] {
-	    background: orange;
+	    background: #f3820a;
 	    font-size: 32px;
 	    color: white;
-	    margin: 40px 0 32px 0;
+	    margin: 20px 0 32px 0;
+	}
+
+}
+
+.icons {
+	position:relative;
+	background:url('../img/icons.png') no-repeat #004f87;
+	background-position: 50% 20px;
+	height:92px;
+
+
+	ul {
+		list-style-type: none;
+		li {
+			display:inline;
+		}
+	}
+	p {
+		position:absolute;
+		top:60px;
+		left: 50%;
+		margin-left: -340px;
+		text-align: center;
+		color: #569cce;
+		padding-bottom:10px;
 	}
 }
 
 footer {
-	.icons {
-	background-color: #004f87;
-
-		ul {
-			list-style-type: none;
-			li {
-				display:inline;
-			}
-		}
-		p {
-			color: #569cce;
-			padding-bottom:10px;
-		}
-	}
+	
 	.info {
 		padding:30px 0;
-
 			p {
+				color: #5692bb;	
 				padding-bottom:20px;
 			}
 			p:last-child {
@@ -112,6 +152,11 @@ footer {
 		text-align: left;
 		min-height: 73px;
 	
+		.wrap > p {
+			position:absolute;
+			left:26px;
+			color:white;
+		}
 		.copyright {
 			position: absolute;
 			right:42px;
@@ -120,10 +165,11 @@ footer {
 		}
 
 	}
+	
+}
 
-	.footer-menu > p {
-		position:absolute;
-		left:26px;
-		color:white;
+@media screen and (max-width:1023px) {
+	.wrap {
+		width:720px;
 	}
 }
