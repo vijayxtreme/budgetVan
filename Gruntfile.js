@@ -10,10 +10,6 @@ module.exports = function(grunt){
 				index:{
 					src:['index.html'],
 					dest:'public/index.html'
-				},
-				js: {
-					src: ['js/*.js', 'node_modules/jquery/dist/jquery.min.js'],
-					dest: 'public/production.js'
 				}
 		},
 		sass: {
@@ -29,8 +25,8 @@ module.exports = function(grunt){
 		},
 		uglify: {
 			build:{
-				src:'public/*.js',
-				dest: 'public/production.min.js'
+				src:'styles/*.css',
+				dest: 'public/style.min.css'
 			}
 		}
 
@@ -42,5 +38,5 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-sass');
-	grunt.registerTask('default', ['jshint', 'sass']);
+	grunt.registerTask('default', ['clean', 'concat', 'sass']);
 };

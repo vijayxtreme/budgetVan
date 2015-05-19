@@ -2,14 +2,16 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>A Web Application</title>
+	<title>Budget Van Lines - Got Movers?</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
 	<header>
 		<div class="logo">
-			<a href="#">gotMovers?</a>
+			<a href="#">got<span class="bold">Movers?</span></a>
 			<p>Yes we got them</p>
 		</div>
 		<div class="questions">
@@ -25,13 +27,13 @@
 				<br />
 				<label>How large is your move?</label>
 				<br />
-				<select>
+				<select name="home">
 					<option value="one">Select Home Size</option>
 				</select>
 				<br />
 				<label>Approximate move date?</label>
 				<br />
-				<select>
+				<select name="moveDate">
 					<option value="move">Move Date</option>
 				</select>
 				<br />
@@ -56,7 +58,7 @@
 		</div>
 		<div class="disclaimer">
 			<div class="wrap">
-				<p>*Disclaimer: GotMovers.com is not a moving company or a moving broker and will not be moving your belongings.  Got Movers' system will match you with licensed movers that can service your move based on your criteria.  Once you submit your information, you will be contacted by phone or email with quotes from licensed movers.</p>
+				<p><span class="bold">*Disclaimer:</span> GotMovers.com is not a moving company or a moving broker and will not be moving your belongings.  Got Movers' system will match you with licensed movers that can service your move based on your criteria.  Once you submit your information, you will be contacted by phone or email with quotes from licensed movers.</p>
 			</div>
 		</div>
 		<div class="footer-menu">
@@ -69,8 +71,5 @@
 			</div>
 		</div>
 	</footer>
-
-
-	<script src="production.min.js"></script>
 </body>
 </html>

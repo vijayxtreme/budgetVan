@@ -2,63 +2,74 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>A Web Application</title>
+	<title>Budget Van Lines - Got Movers?</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 	<header>
-		<a href="">Got Movers?</a>
+		<div class="logo">
+			<a href="#">got<span class="bold">Movers?</span></a>
+			<p>Yes we got them</p>
+		</div>
 		<div class="questions">
 			<p>Questions? Call us Today:</p>
-			<p><span>(888) 683 - 3031</span></p>
+			<p>(888) 683 - 3031</p>
 		</div>
 	</header>
 	<div class="banner-main">
-		<h1>Moving Cost Calculator</h1>
-		<h2>Receive Quotes from nationwide movers as low as $499</h2>
-		<form>
-			<label>How large is your move?</label>
-			<select>
-				<option value="one">Select Home Size</option>
-			</select>
-			<label>Approximate move date?</label>
-			<select>
-				<option value="move">Move Date</option>
-			</select>
-			<input type="submit" value="Get Moving" />
-		</form>
-		<div class="verified">
-			<p>Norton Security</p>
-			<p>Privacy Policy | Terms of Use</p>
+		<div class="wrap">
+			<h1>Moving Cost Calculator</h1>
+			<h2>Receive quotes from nationwide movers as low as $499</h2>
+			<form>
+				<br />
+				<label>How large is your move?</label>
+				<br />
+				<select name="home">
+					<option value="one">Select Home Size</option>
+				</select>
+				<br />
+				<label>Approximate move date?</label>
+				<br />
+				<select name="moveDate">
+					<option value="move">Move Date</option>
+				</select>
+				<br />
+				<input name="getMoving" type="submit" value="Get Moving" />
+			</form>
+			<div class="verified">
+				<p>Privacy Policy | Terms of Use</p>
+			</div>
+		</div>
 	</div>
 
-
-	<footer>
-		<div class="icons">
-			<ul>
-				<li>Allied</li>
-				<li>Arpin</li>
-				<li>Graebel</li>
-				<li>North American</li>
-				<li>National</li>
-			</ul>
+	<div class="icons">
+		<div class="wrap">
 			<p>*These Companies or their agents and many more are part of our vast network of movers.</p>
 		</div>
+	</div>
+	<footer>
 		<div class="info">
 			<p>How is pricing for my moving quote calculated?</p>
 			<p>When can I expect my quote to be as low as $499</p>
 			<p>Who will contact me?</p>
 		</div>
 		<div class="disclaimer">
-			<p>*Disclaimer: GotMovers.com is not a moving company or a moving broker and will not be moving your belongings.  Got Movers' system will match you with licensed movers that can service your move based on your criteria.  Once you submit your information, you will be contacted by phone or email with quotes from licensed movers.</p>
+			<div class="wrap">
+				<p><span class="bold">*Disclaimer:</span> GotMovers.com is not a moving company or a moving broker and will not be moving your belongings.  Got Movers' system will match you with licensed movers that can service your move based on your criteria.  Once you submit your information, you will be contacted by phone or email with quotes from licensed movers.</p>
+			</div>
 		</div>
 		<div class="footer-menu">
-			<p>Home | Privacy Policy | Terms of Use</p>
-			<p>Copyright 2013 &copy; www.GotMovers.com</p>
-			<p>7945 W Sahara Ave., Ste 205 | Las Vegas, NV 89117</p>
+			<div class="wrap">
+				<p>Home | Privacy Policy | Terms of Use</p>
+				<div class="copyright">
+					<p>Copyright 2013 &copy; www.GotMovers.com</p>
+					<p>7945 W Sahara Ave., Ste 205 | Las Vegas, NV 89117</p>
+				</div>
+			</div>
 		</div>
 	</footer>
-
-	<script src="production.min.js"></script>
 </body>
 </html>

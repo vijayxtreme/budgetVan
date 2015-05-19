@@ -1,3 +1,4 @@
+/*Basic Reset */
 html, body, div, h1, h2, h3, h4, p, header, footer, form, ul, li {
 	margin:0;
 	padding:0;
@@ -9,11 +10,6 @@ body {
 	font-family: "Open Sans";
 }
 
-// h1, h2, h3, h4, form {
-	
-// }
-
-
 header {
 	height:56px;
 	position: relative;
@@ -21,20 +17,43 @@ header {
 
 	.logo, .questions {
 		position: absolute;
+		top:14px;
 	}
 	.logo {
+		font-family: "Raleway";
+		font-weight: 300;
+		font-size: 27.36px;
 		left:40px;
+	}
+	a {
+		color:#0b76be;
+		text-decoration: none;
 	}
 
 	.logo p {
-		padding-left:10px;
+		font-size: 9.23px;
+		padding-left: 58px;
 		text-transform: uppercase;
+		margin-top: -5px;
+		color:#0b76be;
 	}
 
 	.questions {
+		font-family:'Roboto';
+		font-weight: 400;
+		font-size: 14px;
+		color: #dadada;
 		right:40px;
 		text-align:right; 
+	
+		p:last-child {
+			font-weight: 700;
+			font-size: 18px;
+			color: #0b76be;
+		}
+
 	}
+
 
 }
 
@@ -66,7 +85,7 @@ header {
 		p {
 			position: absolute;
 			top: 628px;
-			left: 163px;
+			left: 158px;
 		}
 	}
 	form {
@@ -83,22 +102,43 @@ header {
 		margin:15px 0;
 		width: 285px;
 	    height: 65px;
-	    border: 0px;
+	    border: 1px solid #0190d2;
 	    border-radius: 3px;
 	}
 	select {
-	    -moz-appearance: none;
+		/* Hide Select Arrows */
+		-webkit-appearance:none;
+		-moz-appearance:none;
+	  	-o-appearance:none;
+	  	appearance:none; 
+
+	  	/* Need Tweak for IE8 */
+
 	    text-indent: 0.01px;
 	    text-overflow: '';
 	    font-size:20px;
 	    padding-left:10px;
 	    font-weight: 300;
+	    color: #6f808f;
+
 	}
+	select[name="home"]{
+		background:url('../img/home.png') no-repeat 225px center #fff;
+	}
+
+	select[name="moveDate"]{
+		background:url('../img/calendar.png') no-repeat 230px center #fff;
+	}
+
+
 	input[name="getMoving"] {
 	    background: #f3820a;
-	    font-size: 32px;
+	    font-weight: 700;
+	    font-size: 36px;
+	    border:0;
 	    color: white;
 	    margin: 20px 0 32px 0;
+	    box-shadow: 1px 1px 4px rgba(0,0,0,0.38);
 	}
 
 }
@@ -108,7 +148,7 @@ header {
 	background:url('../img/icons.png') no-repeat #004f87;
 	background-position: 50% 20px;
 	height:92px;
-
+	font-size:16px;
 
 	ul {
 		list-style-type: none;
@@ -130,6 +170,7 @@ header {
 footer {
 	
 	.info {
+		font-size:18px;
 		padding:30px 0;
 			p {
 				color: #5692bb;	
@@ -144,21 +185,24 @@ footer {
 		background-color: #0769ad;
 		color:#abd6f4;
 		padding:20px;
+		font-size:14px;
 
 	}
 	.footer-menu {
 		position:relative;
 		background-color: #02385d;
 		text-align: left;
-		min-height: 73px;
+		min-height: 78px;
 	
 		.wrap > p {
 			position:absolute;
+			top:20px;
 			left:26px;
 			color:white;
 		}
 		.copyright {
 			position: absolute;
+			top:20px;
 			right:42px;
 			text-align: right;
 			color: #4b83aa;
@@ -166,6 +210,10 @@ footer {
 
 	}
 	
+}
+/* Helper Classes */
+.bold {
+	font-weight:700;
 }
 
 @media screen and (max-width:1023px) {
