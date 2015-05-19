@@ -1,0 +1,85 @@
+html, body, div, h1, h2, h3, h4, p, header, footer, form, ul, li {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 100%;
+  text-align: center;
+  font-family: "Open Sans"; }
+
+header {
+  height: 56px;
+  position: relative;
+  text-align: left; }
+  header .logo, header .questions {
+    position: absolute; }
+  header .logo {
+    left: 40px; }
+  header .logo p {
+    padding-left: 10px; }
+  header .questions {
+    right: 40px;
+    text-align: right; }
+
+.banner-main {
+  background-color: #0769af;
+  color: white; }
+  .banner-main h1 {
+    font-weight: 700;
+    font-size: 34px; }
+  .banner-main h2 {
+    font-weight: 400;
+    font-size: 25px; }
+  .banner-main .verified {
+    text-align: left; }
+  .banner-main form {
+    width: 350px;
+    height: 400px;
+    margin: 0 auto;
+    background: #0767a9; }
+  .banner-main input, .banner-main select {
+    width: 267px;
+    height: 65px;
+    border: 0px;
+    border-radius: 3px; }
+  .banner-main input[name="getMoving"] {
+    background: orange;
+    font-size: 32px;
+    color: white;
+    margin: 40px 0 32px 0; }
+
+footer .icons {
+  background-color: #004f87; }
+  footer .icons ul {
+    list-style-type: none; }
+    footer .icons ul li {
+      display: inline; }
+  footer .icons p {
+    color: #569cce;
+    padding-bottom: 10px; }
+footer .info {
+  padding: 30px 0; }
+  footer .info p {
+    padding-bottom: 20px; }
+  footer .info p:last-child {
+    padding-bottom: 0px; }
+footer .disclaimer {
+  background-color: #0769ad;
+  color: #abd6f4;
+  padding: 20px; }
+footer .footer-menu {
+  position: relative;
+  background-color: #02385d;
+  text-align: left;
+  min-height: 73px; }
+  footer .footer-menu .copyright {
+    position: absolute;
+    right: 42px;
+    text-align: right;
+    color: #4b83aa; }
+footer .footer-menu > p {
+  position: absolute;
+  left: 26px;
+  color: white; }
+
+/*# sourceMappingURL=style.css.map */

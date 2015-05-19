@@ -1,3 +1,129 @@
-#p {
-	color:red;
+html, body, div, h1, h2, h3, h4, p, header, footer, form, ul, li {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-size:100%;
+	text-align:center;
+	font-family: "Open Sans";
+}
+
+// h1, h2, h3, h4, form {
+	
+// }
+
+
+header {
+	height:56px;
+	position: relative;
+	text-align:left;
+
+	.logo, .questions {
+		position: absolute;
+	}
+	.logo {
+		left:40px;
+	}
+
+	.logo p {
+		padding-left:10px;
+	}
+
+	.questions {
+		right:40px;
+		text-align:right; 
+	}
+
+}
+
+.banner-main {
+	background-color: #0769af;
+	color:white;
+	h1 {
+		font-weight: 700;
+		font-size:34px;
+	}
+	h2 {
+		font-weight:400;
+		font-size:25px;
+	}
+
+	.verified {
+		text-align: left;
+		
+	}
+	form {
+		width:350px;
+		height:400px;
+		margin:0 auto;
+		background: #0767a9;
+	}
+
+	input, select {
+		width: 267px;
+	    height: 65px;
+	    border: 0px;
+	    border-radius: 3px;
+	}
+	input[name="getMoving"] {
+	    background: orange;
+	    font-size: 32px;
+	    color: white;
+	    margin: 40px 0 32px 0;
+	}
+}
+
+footer {
+	.icons {
+	background-color: #004f87;
+
+		ul {
+			list-style-type: none;
+			li {
+				display:inline;
+			}
+		}
+		p {
+			color: #569cce;
+			padding-bottom:10px;
+		}
+	}
+	.info {
+		padding:30px 0;
+
+			p {
+				padding-bottom:20px;
+			}
+			p:last-child {
+				padding-bottom:0px;
+			}
+
+	}
+	.disclaimer {
+		background-color: #0769ad;
+		color:#abd6f4;
+		padding:20px;
+
+	}
+	.footer-menu {
+		position:relative;
+		background-color: #02385d;
+		text-align: left;
+		min-height: 73px;
+	
+		.copyright {
+			position: absolute;
+			right:42px;
+			text-align: right;
+			color: #4b83aa;
+		}
+
+	}
+
+	.footer-menu > p {
+		position:absolute;
+		left:26px;
+		color:white;
+	}
 }

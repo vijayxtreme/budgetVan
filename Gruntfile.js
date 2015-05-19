@@ -12,7 +12,7 @@ module.exports = function(grunt){
 					dest:'public/index.html'
 				},
 				js: {
-					src: ['js/*.js'],
+					src: ['js/*.js', 'node_modules/jquery/dist/jquery.min.js'],
 					dest: 'public/production.js'
 				}
 		},
@@ -22,7 +22,7 @@ module.exports = function(grunt){
 					expand: true, //specify a directory
 					cwd: 'styles', //current working directory
 					src: ['*.scss'],
-					dest: 'public',
+					dest: 'styles',
 					ext: '.css'
 				}]
 			}
@@ -42,5 +42,5 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-sass');
-	grunt.registerTask('default', ['jshint','clean', 'concat', 'sass', 'uglify']);
+	grunt.registerTask('default', ['jshint', 'sass']);
 };
